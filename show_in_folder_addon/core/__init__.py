@@ -1,0 +1,1 @@
+from show_in_folder_addon.core.file_explorer_launcher import FileExplorerLauncher

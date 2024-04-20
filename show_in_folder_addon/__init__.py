@@ -1,12 +1,12 @@
 bl_info = {
     "name": "Show in Folder",
     "author": "Nig3l",
-    "version": (0, 1, 0),
+    "version": (0, 1, 1),
     "blender": (3, 5, 1),
     "location": "Interface",
-    "description": "Show current file in it's folder",
+    "description": "Show current file in its folder",
     "warning": "",
-    "doc_url": "",
+    "doc_url": "https://github.com/Ni-g-3l/blender-show-in-folder",
     "category": "Interface",
 }
 

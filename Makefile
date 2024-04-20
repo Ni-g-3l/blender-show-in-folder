@@ -1,15 +1,23 @@
 PACKAGE_VERSION = $(shell grep -oP 'version": \((.*?)\)' $(CURDIR)/show_in_folder_addon/__init__.py | cut -d'(' -f2 | cut -d')' -f1 | sed 's/, /./g')
 
 install_dev:
+	@echo "------------------- INSTALL DEV ENV ------------------- "
 	rm -rf /tmp/blender/show_in_folder_env
 	mkdir /tmp/blender/show_in_folder_env/scripts/addons -p
 	ln $(CURDIR)/show_in_folder_addon /tmp/blender/show_in_folder_env/scripts/addons/show_in_folder_addon -s
+	@echo "------------------------------------------------------- "
 
 run:
-	export BLENDER_USER_SCRIPTS=/tmp/blender/show_in_folder_env/scripts; \
+	@echo "--------------------- RUN BLENDER --------------------- "
+	@export BLENDER_USER_SCRIPTS=/tmp/blender/show_in_folder_env/scripts; \
 	blender --addons show_in_folder_addon
 
 deploy:release
+	@echo "------------------- DEPLOY PACKAGE -------------------- "
+	@echo Deploying ${PACKAGE_VERSION} version
+	@git push --tags
+	@gh release create ${PACKAGE_VERSION} ./dist/*.zip --generate-notes --latest 
+	@echo "------------------------------------------------------- "
 
 release:build clean
 	@echo "------------------- RELEASE PACKAGE ------------------- "

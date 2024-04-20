@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Show in Folder",
     "author": "Nig3l",
-    "version": (0, 0, 0),
+    "version": (0, 1, 0),
     "blender": (3, 5, 1),
     "location": "Interface",
     "description": "Show current file in it's folder",

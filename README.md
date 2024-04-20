@@ -1,10 +1,16 @@
 # Blender Addon : Open in Folder
 
-Open current file in folder
+Show current file in it's folder
 
 ![Demo](.media/header.png)
 
 This project was bootstrapped with [Blender Addon Template](git@github.com:kitchen-production/blender-addon-template.git).
+
+## ⚙️ How it works
+
+![Menu File](.media/file_menu.png)
+
+If you are working on a saved file, a new entry in File menu appear "Show in Folder".
 
 ## ⚙️ Commands
 
@@ -18,28 +24,20 @@ Creates a zip file of your addon that you can install with the blender addon man
 
 Removes all unnecessary compiled python files.
 
-### `make test`
-
-Launches the unittest test runner.
-
-### `make coverage`
-
-Launches a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.
-
 ## 📥 Installation
 
-1. Download latest version from [Release](https://github.com/Nig3l/blender-open-in-folder-addon/releases)
+1. Download latest version from [Release](https://github.com/Ni-g-3l/blender-show-in-folder/releases)
 2. Install it thnaks to the Blender Addon Manager
 
 ## 🔢 Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Nig3l/blender-open-in-folder-addon/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Ni-g-3l/blender-show-in-folder/tags).
 
 ## 🤹 Authors / Contributers / Attributions
 
-* **Nig3l** - *Main Developer* - [Github](https://github.com/Nig3l/)
+* **Ni-g-3l** - *Main Developer* - [Github](https://github.com/Ni-g-3l/)
 
-See also the list of [contributors](https://github.com/Nig3l/blender-open-in-folder-addon/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Ni-g-3l/blender-show-in-folder/contributors) who participated in this project.
 
 ## 📃 License
 
